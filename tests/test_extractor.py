@@ -6,6 +6,7 @@ import json
 import types
 
 import extractor
+from helpers import extractTableOfContentsPages
 
 
 def testLoadDocumentsValidatesAndLoads(monkeypatch, tmp_path):

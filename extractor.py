@@ -8,6 +8,10 @@ import json
 import subprocess
 import re
 
+from comparator import compareKDENames, compareKDENamesAndRequirements, discoverYamlInputs, flattenKDEs, loadKDEsFromYAML
+from executor import dataframeFromRows, discoverTextInputs, executeKubescapeScan, generateScanCSV, mapDifferencesToKubescapeControls
+
+
 # Function to build a zero-shot prompt for KDE extraction.
 def buildZeroShotPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, List[str]]) -> str:
     sharedContext = buildSharedDocumentContext(_doc1Name, _doc2Name, _docsText)
