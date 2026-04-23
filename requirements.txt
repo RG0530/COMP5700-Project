@@ -1,5 +1,4 @@
 pypdf==6.1.1
-PyPDF2==3.0.1
 pandas==2.3.3
 transformers==4.57.0
 torch==2.9.0

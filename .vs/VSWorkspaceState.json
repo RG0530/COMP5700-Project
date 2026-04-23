@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
-    "\\tests"
+    "\\Output"
   ],
-  "SelectedNode": "\\.github",
   "PreviewInSolutionExplorer": false
 }

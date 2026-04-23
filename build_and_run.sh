@@ -11,6 +11,6 @@ source "$VENV_DIR/bin/activate"
 python -m pip install --upgrade pip
 python -m pip install -r "$ROOT_DIR/requirements.txt"
 
-pyinstaller --onefile --name cis_pipeline "$ROOT_DIR/run_project.py"
+pyinstaller --onefile --name project_binary "$ROOT_DIR/run_project.py"
 
-"$ROOT_DIR/dist/cis_pipeline" "$@"
+"$ROOT_DIR/dist/project_binary" "$@"
