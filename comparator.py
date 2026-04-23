@@ -111,7 +111,7 @@ def loadKDEsFromYAML(_yamlPath: Path) -> Dict[str, Set[str]]:
     return flattenKDEs(payload)
 
 
-# Helper function to compare KDE names between two YAML files, using the flattenKDEs function to extract KDE names.
+# Helper function to compare KDE names between the two YAML files, using the flattenKDEs function to extract KDE names.
 def compareKDENames(_yamlFileA: str, _yamlFileB: str, _outputTextPath: str) -> List[str]:
     pathA = Path(_yamlFileA)
     pathB = Path(_yamlFileB)

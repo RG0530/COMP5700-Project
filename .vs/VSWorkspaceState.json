@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github\\workflows",
+    "\\tests"
   ],
-  "SelectedNode": "\\C:\\Users\\Rayce\\Source\\Repos\\COMP5700-Project",
+  "SelectedNode": "\\.github",
   "PreviewInSolutionExplorer": false
 }

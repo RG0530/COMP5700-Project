@@ -22,7 +22,7 @@ def discoverTextInputs(_outputDir: str = ".") -> Tuple[Path, Path]:
     return candidates[0], candidates[1]
 
 
-# Helper function to map the differences found in Task-2 to Kubescape controls, using keyword matching to associate differences with specific controls, and writing the resulting control list to a text file for Task-3 input.
+# Helper function to map the differences found in Task-2 to the Kubescape controls, using keyword matching to associate differences with specific controls, and writing the resulting control list to a text file for Task-3 input.
 def mapDifferencesToKubescapeControls(_textFileA: str, _textFileB: str, _outputTextPath: str, _controlMapper: Optional[Dict[str, str]] = None) -> List[str]:
     pathA = Path(_textFileA)
     pathB = Path(_textFileB)

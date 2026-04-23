@@ -12,7 +12,7 @@ from comparator import compareKDENames, compareKDENamesAndRequirements, discover
 from executor import dataframeFromRows, discoverTextInputs, executeKubescapeScan, generateScanCSV, mapDifferencesToKubescapeControls
 
 
-# Function to build a zero-shot prompt for KDE extraction.
+# Function to build a zero-shot prompt for the KDE extraction.
 def buildZeroShotPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, List[str]]) -> str:
     sharedContext = buildSharedDocumentContext(_doc1Name, _doc2Name, _docsText)
     return (
@@ -23,7 +23,7 @@ def buildZeroShotPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, Lis
     )
 
 
-# Function to build a few-shot prompt for KDE extraction.
+# Function to build a few-shot prompt for the KDE extraction.
 def buildFewShotPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, List[str]]) -> str:
     sharedContext = buildSharedDocumentContext(_doc1Name, _doc2Name, _docsText)
     return (
@@ -37,7 +37,7 @@ def buildFewShotPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, List
     )
 
 
-# Function to build a chain-of-thought prompt for KDE extraction.
+# Function to build a chain-of-thought prompt for the KDE extraction.
 def buildChainOfThoughtPrompt(_doc1Name: str, _doc2Name: str, _docsText: Dict[str, List[str]]) -> str:
     sharedContext = buildSharedDocumentContext(_doc1Name, _doc2Name, _docsText)
     return (
